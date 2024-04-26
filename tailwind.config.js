@@ -2,16 +2,26 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
-    fontFamily:{
-      'mono': ['IBM Plex Mono', 'Consolas', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
+    fontFamily: {
+      mono: [
+        "IBM Plex Mono",
+        "Consolas",
+        "Menlo",
+        "Monaco",
+        "Courier New",
+        "monospace",
+      ],
+      heroSectionFont: ["Roboto", "sans-serif"],
+      navbarFont: ["Montserrat", "sans-serif"], // Przeniesione do bloku theme
     },
+
     container: {
       center: true,
       padding: "2rem",
@@ -21,23 +31,23 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary-500': '#877EFF',
-        'primary-600': '#5D5FEF',
-        'secondary-500': '#FFB620',
-        'off-white': '#D0DFFF',
-        'red': '#FF5A5A',
-        'dark-1': '#000000',
-        'dark-2': '#09090A',
-        'dark-3': '#101012',
-        'dark-4': '#1F1F22',
-        'light-1': '#FFFFFF',
-        'light-2': '#EFEFEF',
-        'light-3': '#7878A3',
-        'light-4': '#5C5C7B',
-        'priority-low':'#2E72A1',
-        'priority-medium':'#2A924E',
-        'priority-high':'#D9822B',
-        'priority-critical':'#D15252',
+        "primary-500": "#877EFF",
+        "primary-600": "#5D5FEF",
+        "secondary-500": "#FFB620",
+        "off-white": "#D0DFFF",
+        red: "#FF5A5A",
+        "dark-1": "#000000",
+        "dark-2": "#09090A",
+        "dark-3": "#101012",
+        "dark-4": "#1F1F22",
+        "light-1": "#FFFFFF",
+        "light-2": "#EFEFEF",
+        "light-3": "#7878A3",
+        "light-4": "#5C5C7B",
+        "priority-low": "#2E72A1",
+        "priority-medium": "#2A924E",
+        "priority-high": "#D9822B",
+        "priority-critical": "#D15252",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -95,4 +105,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
