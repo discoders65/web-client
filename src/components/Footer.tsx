@@ -9,9 +9,7 @@ const Footer: React.FC = () => {
           <h1 className="text-2xl font-semibold font-heroSectionFont ">
             Groomer <span className="text-orange-700 text-2xl">.</span>
           </h1>
-          <span className="text-slate-600 text-sm">
-            © Groomer International Ltd. 2024
-          </span>
+          <span className="text-slate-600 text-sm">Groomer. 2024</span>
         </div>
         <div className="text-slate-200 ">
           <ul className="flex gap-14 font-semibold text-base">

@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RootLayout from "./Layout/RootLayout";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
+import ServicesPage from "./pages/ServicesPage";
+import OurTeamPage from "./pages/OurTeamPage";
+import OurStoryPage from "./pages/OurStoryPage";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -11,6 +15,10 @@ const App = () => {
         <Routes>
           <Route element={<RootLayout />}>
             <Route path="/*" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/our-team" element={<OurTeamPage />} />
+            <Route path="/our-story" element={<OurStoryPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/404" element={<ErrorPage />} />
           </Route>
         </Routes>
