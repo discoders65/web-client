@@ -17,15 +17,17 @@ const Navbar: React.FC = () => {
           <ul className="flex gap-16 font-semibold text-base mr-10">
             {NavbarLinks.map(({ label, link }) => {
               return (
-                <Link to={link}>
+                <Link to={link} key={label}>
                   <li>{label}</li>
                 </Link>
               );
             })}
           </ul>
-          <button className="border  px-4 py-1 rounded-sm hover:bg-green-500 hover:border-green-600 transition-all">
-            Join
-          </button>
+          <Link to="/register">
+            <button className="border  px-4 py-1 rounded-sm hover:bg-green-500 hover:border-green-600 transition-all">
+              Join
+            </button>
+          </Link>
         </div>
       </section>
     </nav>

@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <ul className="flex gap-14 font-semibold text-base">
             {FooterLinks.map(({ Link, Icon }) => {
               return (
-                <a href={Link}>
+                <a href={Link} key={Link}>
                   <li>
                     <Icon className="w-6 h-auto text-slate-600 hover:text-slate-700" />
                   </li>
