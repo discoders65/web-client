@@ -3,7 +3,7 @@ import { FaTooth } from "react-icons/fa6";
 import { FaShower } from "react-icons/fa6";
 import { MdExpandCircleDown } from "react-icons/md";
 
-const PopularServices = [
+const OurCommitmentList = [
   {
     label: "UNMATCHED QUALITY",
     icon: MdExpandCircleDown,
@@ -30,4 +30,4 @@ const PopularServices = [
   },
 ];
 
-export default PopularServices;
+export default OurCommitmentList;

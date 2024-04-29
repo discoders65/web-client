@@ -1,16 +1,16 @@
 import React from "react";
 import Hero from "../components/Hero";
-import PopularServicesContainer from "../components/PopularServicesContainer";
-import GroomingServicesContainer from "../components/GroomingServicesContainer";
 import OurServicesContainer from "../components/OurServicesContainer";
+import OurCommitmentContainer from "../components/OurCommitmentContainer";
+import ExclusiveCombosContainer from "../components/ExclusiveCombosContainer";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className="h-auto w-full">
       <Hero />
-      <PopularServicesContainer />
+      <OurCommitmentContainer />
       <OurServicesContainer />
-      <GroomingServicesContainer />
+      <ExclusiveCombosContainer />
     </div>
   );
 };

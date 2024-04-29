@@ -1,27 +1,29 @@
 import React from "react";
 import GroomingServiceCategories from "../Constants/GroomingServiceCategories";
-import GroomingServiceCard from "./GroomingServiceCard";
+import GroomingServiceCard from "./ExclusiveComboCard";
 import images from "../Constants/imaegs";
 import ServiceCategoryCard from "./ServiceCategoryCard";
+import { Link } from "react-router-dom";
+import PetCategoryCard from "./PetCategoryCard";
 
 const OurServicesContainer: React.FC = () => {
   return (
-    <section className="w-full bg-[#f6f9fc] ">
-      <img src={images.LayerImage} alt="" />
-      <div className="max-w-[1400px] mx-auto ">
-        <h2 className="text-3xl  font-heroSectionFont text-slate-700 font-semibold mb-12">
-          Our Services Include:
+    <section className="w-full   ">
+      <div className="max-w-7xl mx-auto py-16  flex flex-col ">
+        <h2 className="text-3xl font-extrabold font-navbarFont text-slate-700 ">
+          Popular services
         </h2>
-        <div className="flex gap-5 w-full  ">
-          {GroomingServiceCategories.map((service) => {
-            return (
-              <ServiceCategoryCard
-                service={service}
-                className="w-full md:w-[calc(50%-20px)] lg:w-[calc(33.33%-21px)]  "
-              />
-            );
-          })}
-        </div>
+        {GroomingServiceCategories.map((petCategory, index) => {
+          const isLastItem = index === GroomingServiceCategories.length - 1;
+          return (
+            <PetCategoryCard
+              key={index}
+              petCategory={petCategory}
+              isLastItem={isLastItem}
+              index={index}
+            />
+          );
+        })}
       </div>
     </section>
   );

@@ -9,21 +9,81 @@ import RabbitImage from "../assets/images/rabbit.png";
 const GroomingServiceCategories = [
   {
     label: "Dogs",
-    icon: DogImage,
-    textContent:
-      "Choose Groomit Arizona for exceptional pet grooming services. Our expert groomers are trained and updated on the latest techniques to provide the best care for your pets.",
+    image: DogImage,
+    popularServices: [
+      {
+        name: "Bathing",
+        price: "150$",
+        time: "0.5h",
+      },
+      {
+        name: "Hair Trimming",
+        price: "100$",
+        time: "0.5h",
+      },
+      {
+        name: "Nail Clipping",
+        price: "50$",
+        time: "0.25h",
+      },
+      {
+        name: "Teeth Cleaning",
+        price: "80$",
+        time: "0.25h",
+      },
+    ],
   },
   {
     label: "Cats",
-    icon: CatImage,
-    textContent:
-      "Trust Groomit Arizona, a reliable and professional pet grooming service. Our experienced groomers genuinely love animals and prioritize their care and safety.",
+    image: CatImage,
+    popularServices: [
+      {
+        name: "Bathing",
+        price: "120$",
+        time: "0.5h",
+      },
+      {
+        name: "Hair Brushing",
+        price: "80$",
+        time: "0.25h",
+      },
+      {
+        name: "Ear Cleaning",
+        price: "60$",
+        time: "0.25h",
+      },
+      {
+        name: "Nail Trimming",
+        price: "70$",
+        time: "0.25h",
+      },
+    ],
   },
   {
     label: "Rabbits",
-    icon: RabbitImage,
-    textContent:
-      "Our grooming services are customized to meet your pets' unique needs. From baths and haircuts to nail trims and ear cleaning, we cater to all breeds and sizes.",
+    image: RabbitImage,
+    popularServices: [
+      {
+        name: "Bathing",
+        price: "100$",
+        time: "0.5h",
+      },
+      {
+        name: "Hair Trimming",
+        price: "80$",
+        time: "0.5h",
+      },
+      {
+        name: "Teeth Filing",
+        price: "70$",
+        time: "0.25h",
+      },
+      {
+        name: "Fur Brushing",
+        price: "60$",
+        time: "0.25h",
+      },
+    ],
   },
 ];
 
