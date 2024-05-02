@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import RegisterForm from "../forms/RegisterForm";
+import React from "react";
 import { useMutation } from "react-query";
 import { login } from "../services/userApi";
 import LoginForm from "../forms/LoginForm";
+import { useAccountStore } from "../Store/store";
 
 interface ILoginFormData {
   email: string;
@@ -10,9 +10,13 @@ interface ILoginFormData {
 }
 
 const LoginPage: React.FC = () => {
+  const setUserAccount = useAccountStore((state) => state.setAccount);
   const { mutate } = useMutation({
     mutationFn: ({ formData }: { formData: ILoginFormData }) => {
       return login({ formData });
+    },
+    onSuccess: (data) => {
+      setUserAccount(data);
     },
   });
 

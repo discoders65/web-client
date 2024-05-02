@@ -1,8 +1,10 @@
 import React from "react";
 import NavbarLinks from "../Constants/NavbarLinks";
 import { Link } from "react-router-dom";
+import { useAccountStore } from "../Store/store";
 
 const Navbar: React.FC = () => {
+  const user = useAccountStore((state) => state.account);
   return (
     <nav className="hidden w-full h-[80px]  bg-[#0b4127] px-12 xl:px-0 lg:block">
       <section className="flex justify-between max-w-7xl mx-auto items-center h-full">
@@ -23,11 +25,15 @@ const Navbar: React.FC = () => {
               );
             })}
           </ul>
-          <Link to="/register">
-            <button className="border  px-4 py-1 rounded-sm hover:bg-green-500 hover:border-green-600 transition-all">
-              Join
-            </button>
-          </Link>
+          {!user ? (
+            <Link to="/register">
+              <button className="border  px-4 py-1 rounded-sm hover:bg-green-500 hover:border-green-600 transition-all">
+                Join
+              </button>
+            </Link>
+          ) : (
+            <button className="border px-4 py-1 rounded ">Logout</button>
+          )}
         </div>
       </section>
     </nav>
