@@ -20,7 +20,6 @@ const LoginForm: React.FC<ILoginFormProps> = ({ handleSave }) => {
   });
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
     handleSave({ formData: data });
   });
 

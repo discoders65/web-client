@@ -10,67 +10,116 @@ const RegisterForm: React.FC = ({ handleSave }) => {
   } = useForm({
     defaultValues: {
       name: "",
-      username: "",
+      userName: "",
       email: "",
       password: "",
+      confirmPassword: "",
     },
     mode: "onChange",
   });
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
     handleSave({ formData: data });
   });
 
   return (
     <div>
       <form
-        className=" w-[40%] mx-auto flex flex-col gap-7 mt-16"
+        className=" w-[40%] mx-auto flex flex-col gap-6 mt-10"
         onSubmit={onSubmit}
       >
         <div className="flex flex-col">
-          <label className="text-slate-500" htmlFor="name">
+          <label className="text-slate-500 text-sm" htmlFor="name">
             Name
           </label>
           <input
             type="text"
             id="name"
-            {...register("name", { required: "name is required" })}
-            className="py-3 px-3 bg-slate-100 rounded mt-1"
+            {...register("name", { required: "Name is required" })}
+            className={`py-3 px-3 bg-slate-100 rounded mt-1 outline-none ${
+              errors.name ? "border border-rose-600" : ""
+            }`}
           />
+          {errors.name && (
+            <span className="text-xs text-rose-500">
+              {errors.name?.message}
+            </span>
+          )}
         </div>
         <div className="flex flex-col">
-          <label className="text-slate-500" htmlFor="username">
+          <label className="text-slate-500 text-sm" htmlFor="username">
             Username
           </label>
           <input
             type="text"
             id="username"
-            {...register("username", { required: "username is required" })}
-            className="py-3 px-3 bg-slate-100 rounded mt-1"
+            {...register("userName", { required: "username is required" })}
+            className={`py-3 px-3 bg-slate-100 rounded mt-1 outline-none ${
+              errors.userName ? "border border-rose-600" : ""
+            }`}
           />
+          {errors.userName && (
+            <span className="text-xs text-rose-500">
+              {errors.userName?.message}
+            </span>
+          )}
         </div>
         <div className="flex flex-col">
-          <label className="text-slate-500" htmlFor="email">
+          <label className="text-slate-500 text-sm" htmlFor="email">
             Email
           </label>
           <input
-            type="text"
+            type="email"
             id="email"
             {...register("email", { required: "email is required" })}
-            className="py-3 px-3 bg-slate-100 rounded mt-1"
+            className={`py-3 px-3 bg-slate-100 rounded mt-1 outline-none ${
+              errors.email ? "border border-rose-600" : ""
+            }`}
           />
+          {errors.email && (
+            <span className="text-xs text-rose-500">
+              {errors.email?.message}
+            </span>
+          )}
         </div>
         <div className="flex flex-col">
-          <label className="text-slate-500" htmlFor="password">
+          <label className="text-slate-500 text-sm" htmlFor="password">
             Password
           </label>
           <input
             type="password"
             id="password"
             {...register("password", { required: "password is required" })}
-            className="py-3 px-3 bg-slate-100 rounded mt-1"
+            className={`py-3 px-3 bg-slate-100 rounded mt-1 outline-none ${
+              errors.email ? "border border-rose-600" : ""
+            }`}
           />
+        </div>
+        <div className="flex flex-col">
+          <label className="text-slate-500 text-sm" htmlFor="password">
+            Confirm password
+          </label>
+          <input
+            type="password"
+            id="password"
+            {...register("confirmPassword", {
+              validate: (value) => {
+                const password = watch("password");
+                if (password !== value) return "Paswords do not match";
+                return true;
+              },
+            })}
+            className={`py-3 px-3 bg-slate-100 rounded mt-1 outline-none ${
+              errors.password || errors.confirmPassword
+                ? "border border-rose-600 "
+                : ""
+            }`}
+          />
+          {errors.confirmPassword && (
+            <span className="text-xs text-rose-500">
+              {errors.confirmPassword?.message}
+            </span>
+          )}
         </div>
         <button
           type="submit"
