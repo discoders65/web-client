@@ -4,7 +4,8 @@ interface IOurCommitmentCard {
   className: string;
   service: {
     label: string;
-    icon: string;
+    icon:React.ElementType;
+    textContent:string;
   };
 }
 

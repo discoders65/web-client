@@ -1,7 +1,19 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const RegisterForm: React.FC = ({ handleSave }) => {
+
+interface IRegisterFormData {
+  name: string;
+  username: string;
+  email: string;
+  password: string;
+}
+
+interface IRegisterFormProps {
+  handleSave: ({formData}:{formData:IRegisterFormData}) => void;
+}
+
+const RegisterForm: React.FC<IRegisterFormProps> = ({ handleSave }) => {
   const {
     register,
     handleSubmit,
@@ -18,7 +30,7 @@ const RegisterForm: React.FC = ({ handleSave }) => {
   });
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
+
     handleSave({ formData: data });
   });
 

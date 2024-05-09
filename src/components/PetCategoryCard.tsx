@@ -23,7 +23,7 @@ const PetCategoryCard: React.FC<IPetCategoryCardProps> = ({
     <section className="w-full py-12">
       <div
         className={`max-w-7xl mx-auto  flex flex-col  md:flex-row   ${
-          index % 2 !== 0 && "flex-row-reverse"
+          index % 2 !== 0 && "md:flex-row-reverse"
         } ${!isLastItem && "border-b"}`}
       >
         <div className="flex-1 flex flex-col">
