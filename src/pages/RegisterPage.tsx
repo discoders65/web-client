@@ -16,7 +16,7 @@ const RegisterPage: React.FC = () => {
 
   return (
     <section className="w-full ">
-      <div className="max-w-[1400px]  mx-auto flex flex-col py-20 ">
+      <div className="max-w-[1400px]  mx-auto flex flex-col py-12 ">
         <h2 className="mx-auto text-3xl font-semibold text-slate-600 font-heroSectionFont">
           Create a new account
         </h2>
