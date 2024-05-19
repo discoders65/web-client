@@ -24,7 +24,7 @@ const LoginForm: React.FC<ILoginFormProps> = ({ handleSave }) => {
   });
 
   return (
-    <div>
+    <div className="h-auto">
       <form
         className=" w-[40%] mx-auto flex flex-col gap-7 mt-16"
         onSubmit={onSubmit}

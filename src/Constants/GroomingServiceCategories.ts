@@ -13,22 +13,22 @@ const GroomingServiceCategories = [
     popularServices: [
       {
         name: "Bathing",
-        price: "150$",
+        price: "150 ",
         time: "0.5h",
       },
       {
         name: "Hair Trimming",
-        price: "100$",
+        price: "100 ",
         time: "0.5h",
       },
       {
         name: "Nail Clipping",
-        price: "50$",
+        price: "50 ",
         time: "0.25h",
       },
       {
         name: "Teeth Cleaning",
-        price: "80$",
+        price: "80 ",
         time: "0.25h",
       },
     ],
@@ -39,17 +39,17 @@ const GroomingServiceCategories = [
     popularServices: [
       {
         name: "Bathing",
-        price: "120$",
+        price: "120 ",
         time: "0.5h",
       },
       {
         name: "Hair Brushing",
-        price: "80$",
+        price: "80 ",
         time: "0.25h",
       },
       {
         name: "Ear Cleaning",
-        price: "60$",
+        price: "60 ",
         time: "0.25h",
       },
       {
@@ -65,22 +65,22 @@ const GroomingServiceCategories = [
     popularServices: [
       {
         name: "Bathing",
-        price: "100$",
+        price: "100",
         time: "0.5h",
       },
       {
         name: "Hair Trimming",
-        price: "80$",
+        price: "80",
         time: "0.5h",
       },
       {
         name: "Teeth Filing",
-        price: "70$",
+        price: "70",
         time: "0.25h",
       },
       {
         name: "Fur Brushing",
-        price: "60$",
+        price: "60",
         time: "0.25h",
       },
     ],

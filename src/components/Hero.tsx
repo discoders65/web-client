@@ -4,21 +4,21 @@ import Icons from "../Constants/icons";
 
 const Hero: React.FC = () => {
   return (
-    <section className=" bg-[#0b4127] w-full flex  pt-3 justify-center px-12  2xl:px-0 ">
-      <div className="flex justify-between w-[1380px] ">
-        <div className="flex-1 flex flex-col py-20  gap-4 lg:py-40  ">
-          <span className="text-center text-4xl xl:text-left lg:text-5xl font-semibold text-slate-100 font-heroSectionFont ">
-            Experience top-tier grooming.
+    <section className=" bg-blue-100 w-full flex  pt-3 justify-center px-12  2xl:px-0 ">
+      <div className="flex justify-between w-[1400px] ">
+        <div className="flex-1 flex flex-col py-20  gap-5 lg:py-40  ">
+          <span className="text-center text-4xl xl:text-left lg:text-5xl font-semibold text-slate-900 font-heroSectionFont ">
+          Profesjonalna Pielęgnacja.
           </span>
-          <span className="text-center text-4xl xl:text-left lg:text-5xl font-semibold text-slate-100 font-heroSectionFont">
-            Let us pamper your furry
+          <span className="text-center text-4xl xl:text-left lg:text-5xl font-semibold text-slate-900 font-heroSectionFont">
+          Zaufaj doświadczeniu 
           </span>
-          <span className="text-center text-4xl xl:text-left lg:text-5xl font-semibold text-slate-100 font-heroSectionFont">
-            friend to perfection.
+          <span className="text-center text-4xl xl:text-left lg:text-5xl font-semibold text-slate-900 font-heroSectionFont">
+          naszego zespołu.
           </span>
 
-          <span className="text-center text-4xl lg:text-left lg:text-2xl font-semibold text-gray-300 ">
-            Join our satisfied clients today!
+          <span className="text-center text-3xl lg:text-left lg:text-xl font-semibold text-gray-800 ">
+          Dołącz do grona naszych zadowolonych klientów już dziś!
           </span>
           <div className="w-full mt-14 lg:mt-4 ">
             <form className="w-full gap-y-4 flex  flex-col lg:gap-y-0 lg:flex-row p-0 m-0 ">
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
 
         <div className="hidden lg:flex w-1/2  justify-end  ">
           <img
-            src={images.HeroImage}
+            src={images.HeroImage4}
             alt="dog-photo"
             className="w-auto h-auto"
           />

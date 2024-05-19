@@ -7,7 +7,7 @@ const RootLayout = () => {
   return (
     <div className="h-screen w-full">
       <Navbar />
-      <section className="h-auto">
+      <section className="h-auto ">
         <Outlet />
       </section>
       <Footer />

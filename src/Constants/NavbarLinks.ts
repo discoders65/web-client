@@ -4,19 +4,19 @@ const NavbarLinks = [
     link: "/",
   },
   {
-    label: "Services",
+    label: "Usługi",
     link: "/services",
   },
   {
-    label: "Our story",
+    label: "Nasza Hisotria",
     link: "/our-story",
   },
   {
-    label: "Our team",
+    label: "Nasz Zespół",
     link: "/our-team",
   },
   {
-    label: "Contact",
+    label: "Kontakt",
     link: "/contact",
   },
 ];
