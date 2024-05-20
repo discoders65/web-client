@@ -14,7 +14,10 @@ import IntroCatImage from "../assets/images/introCatImage.jpg";
 import IntroDogImage from "../assets/images/introDogImage.jpg";
 import IntroDogImage1 from "../assets/images/introDogImage1.png";
 import IntroImage2 from "../assets/images/intro2.png";
-
+import DogBathImage from "../assets/images/dogBathImage.jpg";
+import DogHairdcutImage from "../assets/images/dogHaircutImage.jpg";
+import DogToothImage from "../assets/images/dogToothImage.jpg";
+import DogNailclipImage from "../assets/images/dogNailclipImage.jpg";
 
 const images = {
   HeroImage,
@@ -27,6 +30,10 @@ const images = {
   LayerImage,
   LayerImage2,
   LayerImage3,
+  DogBathImage,
+  DogHairdcutImage,
+  DogToothImage,
+  DogNailclipImage,
   IntroductionImages:[
     IntroDogImage,IntroRabbitImage1,IntroCatImage
   ]
