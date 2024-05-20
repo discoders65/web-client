@@ -1,39 +1,39 @@
 const SERVICESLIST = [
     {
-        label: "Pielęgnacja Psów",
-        description: "Profesjonalna pielęgnacja psów, która sprawi, że Twój pupil będzie wyglądał i czuł się świetnie.",
-        features: ["Strzyżenie", "Kąpiel", "Stylizacja"],
+        label: "Królewska Pielęgnacja Psa",
+        description: "Luksusowa pielęgnacja dla psów, która zapewni Twojemu pupilowi królewskie traktowanie i wygląd.",
+        features: ["Strzyżenie premium", "Specjalna kąpiel z odżywkami", "Stylizacja VIP"],
         isNew: false
     },
     {
-        label: "Pielęgnacja Kotów",
-        description: "Specjalistyczna pielęgnacja kotów zapewniająca zdrową skórę i sierść Twojego pupila.",
-        features: ["Strzyżenie", "Kąpiel", "Odżywianie sierści"],
+        label: "Koci Raj",
+        description: "Ekskluzywna pielęgnacja dla kotów, zapewniająca zdrową, lśniącą sierść i wyjątkowy komfort.",
+        features: ["Strzyżenie premium", "Kąpiel z olejkami", "Odżywianie sierści deluxe"],
         isNew: false
     },
     {
-        label: "Pielęgnacja Królików",
-        description: "Kompleksowa pielęgnacja królików, aby Twój mały przyjaciel był zadbany i szczęśliwy.",
-        features: ["Przycinanie pazurków", "Czyszczenie uszu", "Kąpiel na sucho"],
+        label: "Luksus dla Królika",
+        description: "Wyjątkowa pielęgnacja królików z naciskiem na komfort i zdrowie Twojego małego przyjaciela.",
+        features: ["Profesjonalne przycinanie pazurków", "Czyszczenie uszu z aromaterapią", "Kąpiel na sucho premium"],
         isNew: true
     },
     {
-        label: "Zdrowie i Higiena",
-        description: "Usługi zdrowotne i higieniczne dla wszystkich zwierząt, aby zapewnić im najlepszą opiekę.",
-        features: ["Czyszczenie zębów", "Usuwanie kleszczy", "Sprawdzanie skóry"],
+        label: "Komplet Zdrowia",
+        description: "Kompleksowe usługi zdrowotne i higieniczne, aby Twój pupil cieszył się doskonałym zdrowiem.",
+        features: ["Profesjonalne czyszczenie zębów", "Bezpieczne usuwanie kleszczy", "Detoksykacja skóry"],
         isNew: false
     },
     {
-        label: "Spa dla Zwierząt",
-        description: "Luksusowe usługi spa, które pozwolą Twojemu zwierzakowi poczuć się wyjątkowo.",
-        features: ["Masaże", "Aromaterapia", "Pielęgnacja sierści"],
+        label: "Królewskie Spa",
+        description: "Luksusowe spa dla zwierząt, które pozwoli Twojemu pupilowi na pełen relaks i odnowę.",
+        features: ["Masaże relaksacyjne", "Aromaterapia z olejkami eterycznymi", "Intensywna pielęgnacja sierści"],
         isNew: true
     },
     {
-        label: "Stylizacja i Moda",
-        description: "Stylizowanie i modne dodatki, aby Twój pupil zawsze wyglądał modnie i stylowo.",
-        features: ["Stylizacja sierści", "Modne akcesoria", "Sesje zdjęciowe"],
-        isNew: false
+        label: "Modowy Wybieg",
+        description: "Ekskluzywne stylizacje i dodatki, aby Twój pupil zawsze wyglądał jak gwiazda.",
+        features: ["Zaawansowana stylizacja sierści", "Modne akcesoria", "Profesjonalne sesje zdjęciowe"],
+        isNew: true
     }
 ];
 

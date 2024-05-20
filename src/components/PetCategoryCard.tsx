@@ -1,13 +1,16 @@
 import React from "react";
+import images from "../Constants/imaegs";
 
 interface IPetCategoryCardProps {
   petCategory: {
     label: string;
     image: string;
+    header:string;
     popularServices: {
       name: string;
       price: string;
       time: string;
+      description:string;
     }[];
   };
   index: number;
@@ -20,54 +23,41 @@ const PetCategoryCard: React.FC<IPetCategoryCardProps> = ({
   isLastItem,
 }) => {
   return (
-    <section className={`w-full py-20 rounded-xl mb-20 ${index %2 ===0 ? "bg-sky-10 " :"bg-violet-50" }`}>
-      <div
-        className={`max-w-[1400px] mx-auto  flex flex-col  md:flex-row rounded-2xl  ${
-          index % 2 !== 0 && "md:flex-row-reverse"
-        } ${!isLastItem && "border-b"} ${index %2 ===0 ? "bg-blue-200 " :"bg-violet-200"}`}
-      >
-        <div className="flex-1 flex flex-col  items-center">
-        <h3 className=" mt-10 text-3xl font-heroSectionFont font-semibold text-slate-600 text-center ">
-            {petCategory.label}
-          </h3>
-          <div className="w-fit flex h-fit  justify-center   ">
-            <img
-              src={petCategory.image}
-              className="max-w-[150px] sm:max-w-[190px] md:max-w-[400px]  object-cover object-center"
-              alt=""
-            />
-          </div>
-    
-        </div>
-        <div className="flex-1 py-20 x flex flex-col  lg:px-0   ">
-        {petCategory.popularServices.map((service, i) => {
-            const isLastItem = i === petCategory.popularServices.length - 1;
-            return (
-              <div
-                className={`flex justify-between py-5 px-20 font-semibold text-slate-700 ${
-                  !isLastItem && "border-b "
-                } ${index %2 ===0 ? "border-sky-0 " :"border-violet-100" }`}
-              >
-                <div className="flex-1 flex items-center">
-                  <span className="text-slate-700">{service.name}</span>
-                </div>
-                <div className="w-1/5 flex flex-col items-center ">
-                  <span className="text-base ">{service.price} <span className=" text-xs">zł</span></span>
-                  <span className="text-xs text-slate-600">{service.time}</span>
-                </div>
-                <div className="w-1/5 flex items-center">
-                  <button className="bg-emerald-400 text-slate-700  rounded text-sm py-1.5 px-3">
-                    Book
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-          <button className=" w-fit px-3 py-2 mx-auto mt-10 rounded border border-slate-200 hover:bg-emerald-500 hover:text-white transition-all  text-slate-700 font-semibold">
-            View more
-          </button>
-        </div>
+<section className={ `w-full mx-auto flex flex-col py-40 ${index % 2 !== 0 ? "bg-emerald-50" : index === 0 ? "bg-orange-50" : "bg-blue-100"}` }>
+
+
+
+<div className="max-w-[1300px] mx-auto">
+  
+<div className="flex flex-row justify-between mb-12  ">
+
+<div className="flex-1 text-3xl font-bold">{petCategory.label}</div>
+
+<div className="text-xl font-semibold">{petCategory.header}</div>
+</div>
+
+
+<div className="  flex justify-between  border-slate-900">
+{petCategory.popularServices.map((service)=>{
+  return(
+    <div className="max-w-[24%]  bg-white rounded-[20px]  w-full">
+      <div>
+        <img src={images.HeroImage10}className="rounded-t-[20px] w-auto h-auto object-cover" alt="" />
       </div>
+<div className="p-5 flex flex-col gap-5">
+<div className="text-xl font-semibold">{service.name}</div>
+      <div className="text-xs text-slate-600">{service.description}</div>
+      <div className="text-sm">{service.time}</div>
+      <div className="text-sm">{service.price}</div>
+     <button className="ml-5 bg-green-700 px-5 py-2">Umów</button>
+</div>
+    </div>
+  )
+})}
+
+</div>
+  </div>
+
     </section>
   );
 };

@@ -37,7 +37,7 @@ const RegisterForm: React.FC<IRegisterFormProps> = ({ handleSave }) => {
   return (
     <div>
       <form
-        className=" w-[40%] mx-auto flex flex-col gap-6 mt-10"
+        className=" w-[40%] mx-auto flex flex-col gap-6 mt-10 flex-1  h-fit"
         onSubmit={onSubmit}
       >
         <div className="flex flex-col">
@@ -135,7 +135,7 @@ const RegisterForm: React.FC<IRegisterFormProps> = ({ handleSave }) => {
         </div>
         <button
           type="submit"
-          className="mt-7 border py-2 bg-emerald-400 font-semibold text-white text-xl rounded"
+          className="mt-7 border py-2 bg-indigo-400 font-semibold text-white text-xl rounded"
         >
           Register
         </button>

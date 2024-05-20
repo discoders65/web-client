@@ -22,7 +22,7 @@ useEffect(()=>{
 console.log(isActive)
 
   return (
-    <nav className={`hidden h-24 bg-blue-100 px-12 xl:px-0 lg:block  sticky top-0 ${isActive && "bg-[#ffff]  transition-all delay-100 border-b border-slate-200 shadow-sm"}`}>
+    <nav className={`hidden z-50 h-24  px-12 xl:px-0 lg:block  sticky top-0 ${isActive && "bg-white  transition-all delay-100 border-b border-slate-200 shadow-sm"}`}>
       <section className="flex justify-between  max-w-7xl mx-auto items-center h-full">
         <div className={`text-slate-900 ${isActive && "text-gray-700"}`}>
           <Link to="/">

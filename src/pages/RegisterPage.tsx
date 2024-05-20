@@ -15,7 +15,7 @@ const RegisterPage: React.FC = () => {
   };
 
   return (
-    <section className="w-full ">
+    <section className="w-full  flex-1 ">
       <div className="max-w-[1400px]  mx-auto flex flex-col py-12 ">
         <h2 className="mx-auto text-3xl font-semibold text-slate-600 font-heroSectionFont">
           Create a new account

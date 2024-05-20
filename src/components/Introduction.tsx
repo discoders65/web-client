@@ -29,9 +29,9 @@ const Introduction: React.FC = () => {
 				</p>
 				<a
 					href="#"
-					className="text-blue-600 font-semibold"
+					className="text-blue-400 font-semibold hover:text-blue-500 transition-all"
 				>
-					See how it helped others
+					Poznaj Naszą Historię
 				</a>
 			</div>
     </div>

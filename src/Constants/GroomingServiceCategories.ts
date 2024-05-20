@@ -8,80 +8,95 @@ import RabbitImage from "../assets/images/rabbit.png";
 
 const GroomingServiceCategories = [
   {
-    label: "Dogs",
+    label: "Psy",
     image: DogImage,
+    header: "Najczęściej wybierane usługi dla psów",
     popularServices: [
       {
-        name: "Bathing",
-        price: "150 ",
+        name: "Kąpiel",
+        price: "150",
         time: "0.5h",
+        description: "Dokładna i delikatna kąpiel, aby utrzymać sierść psa czystą i zdrową.",
       },
       {
-        name: "Hair Trimming",
-        price: "100 ",
-        time: "0.5h",
-      },
-      {
-        name: "Nail Clipping",
-        price: "50 ",
-        time: "0.25h",
-      },
-      {
-        name: "Teeth Cleaning",
-        price: "80 ",
-        time: "0.25h",
-      },
-    ],
-  },
-  {
-    label: "Cats",
-    image: CatImage,
-    popularServices: [
-      {
-        name: "Bathing",
-        price: "120 ",
-        time: "0.5h",
-      },
-      {
-        name: "Hair Brushing",
-        price: "80 ",
-        time: "0.25h",
-      },
-      {
-        name: "Ear Cleaning",
-        price: "60 ",
-        time: "0.25h",
-      },
-      {
-        name: "Nail Trimming",
-        price: "70$",
-        time: "0.25h",
-      },
-    ],
-  },
-  {
-    label: "Rabbits",
-    image: RabbitImage,
-    popularServices: [
-      {
-        name: "Bathing",
+        name: "Strzyżenie",
         price: "100",
         time: "0.5h",
+        description: "Profesjonalne strzyżenie, aby Twój pies wyglądał schludnie i stylowo.",
       },
       {
-        name: "Hair Trimming",
-        price: "80",
-        time: "0.5h",
-      },
-      {
-        name: "Teeth Filing",
-        price: "70",
+        name: "Obcinanie Pazurów",
+        price: "50",
         time: "0.25h",
+        description: "Bezpieczne i precyzyjne obcinanie pazurów, aby zapobiec dyskomfortowi i urazom.",
       },
       {
-        name: "Fur Brushing",
+        name: "Czyszczenie Zębów",
+        price: "80",
+        time: "0.25h",
+        description: "Skuteczne czyszczenie zębów, aby utrzymać zdrowie jamy ustnej psa.",
+      },
+    ],
+  },
+  {
+    label: "Koty",
+    image: CatImage,
+    header: "Najczęściej wybierane usługi dla kotów",
+    popularServices: [
+      {
+        name: "Kąpiel",
+        price: "120",
+        time: "0.5h",
+        description: "Delikatna kąpiel, aby utrzymać sierść kota czystą i lśniącą.",
+      },
+      {
+        name: "Szczotkowanie Sierści",
+        price: "80",
+        time: "0.25h",
+        description: "Regularne szczotkowanie sierści, aby zapobiegać splątaniu i zmniejszać linienie.",
+      },
+      {
+        name: "Czyszczenie Uszu",
         price: "60",
         time: "0.25h",
+        description: "Dokładne czyszczenie uszu, aby usunąć brud i zapobiegać infekcjom.",
+      },
+      {
+        name: "Obcinanie Pazurów",
+        price: "70",
+        time: "0.25h",
+        description: "Bezpieczne obcinanie pazurów, aby utrzymać pazury kota w dobrym stanie.",
+      },
+    ],
+  },
+  {
+    label: "Króliki",
+    image: RabbitImage,
+    header: "Najczęściej wybierane usługi dla królików",
+    popularServices: [
+      {
+        name: "Kąpiel",
+        price: "100",
+        time: "0.5h",
+        description: "Ostrożna kąpiel, aby utrzymać królika czystym bez powodowania stresu.",
+      },
+      {
+        name: "Strzyżenie Sierści",
+        price: "80",
+        time: "0.5h",
+        description: "Profesjonalne strzyżenie, aby zarządzać sierścią królika i zapobiegać splątaniu.",
+      },
+      {
+        name: "Piłowanie Zębów",
+        price: "70",
+        time: "0.25h",
+        description: "Delikatne piłowanie zębów, aby zapewnić, że zęby królika są w dobrym stanie.",
+      },
+      {
+        name: "Szczotkowanie Sierści",
+        price: "60",
+        time: "0.25h",
+        description: "Regularne szczotkowanie sierści, aby utrzymać sierść królika gładką i bez kołtunów.",
       },
     ],
   },
