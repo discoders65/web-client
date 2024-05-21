@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ErrorPage = () => {
+const ErrorPage:React.FC = () => {
   return (
     <div className='h-screen w-full flex justify-center items-center text-3xl '>
 

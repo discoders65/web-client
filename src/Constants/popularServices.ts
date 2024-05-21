@@ -2,7 +2,7 @@
 import images from "./imaegs";
 
 
-const popularServices = [
+const POPULAR_SERVICES = [
   {
     name: "Kąpiel (Pies)",
     price: "150",
@@ -57,4 +57,4 @@ const popularServices = [
   },
 ];
 
-export default popularServices;
+export default POPULAR_SERVICES;

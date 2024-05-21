@@ -1,10 +1,9 @@
 import React from "react";
 import Hero from "../components/Hero";
-import OurServicesContainer from "../components/OurServicesContainer";
 import OurCommitmentContainer from "../components/OurCommitmentContainer";
-import ExclusiveCombosContainer from "../components/ExclusiveCombosContainer";
 import Introduction from "../components/Introduction";
 import ExclusiveCombossContainer from "../components/ExclusiveCombossContainer";
+import PopularServicesContainer from "../components/PopularServicesContainer";
 
 const Home: React.FC = () => {
   return (
@@ -12,7 +11,7 @@ const Home: React.FC = () => {
       <Hero />
       <OurCommitmentContainer />
       <Introduction/>
-      <OurServicesContainer />
+      <PopularServicesContainer />
       <ExclusiveCombossContainer />
     </div>
   );

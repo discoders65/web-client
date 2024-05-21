@@ -1,14 +1,10 @@
 import React from "react";
+import CONSTANTS from "../Constants";
 
-import GroomingServiceCard from "./ExclusiveComboCard";
-import images from "../Constants/imaegs";
-import ServiceCategoryCard from "./ServiceCategoryCard";
-import { Link } from "react-router-dom";
-import PetCategoryCard from "./PetCategoryCard";
-import popularServices from "../Constants/GroomingServiceCategories";
+
 import ServiceCard from "./ServiceCard";
 
-const OurServicesContainer: React.FC = () => {
+const PopularServicesContainer: React.FC = () => {
   return (
     
       <section className={ `w-full mx-auto flex flex-col py-10  "bg-blue-100"}` }>
@@ -19,14 +15,14 @@ const OurServicesContainer: React.FC = () => {
         
       <div className="flex flex-row justify-between mb-12  ">
       
-      <h2 className="flex-1 text-3xl font-bold mb-5">Najpopularniejsze Usługi</h2>
+      <h2 className="flex-1 text-3xl font-bold mb-5">Popularne Usługi</h2>
       
      <button className="bg-blue-500 text-white px-2 rounded-lg">Zobacz więcej</button>
       </div>
       
       
       <div className="  flex justify-between  border-slate-900 flex-wrap">
-      {popularServices.map((service)=>{
+      {CONSTANTS.POPULAR_SERVICES.map((service)=>{
         return(
       <ServiceCard 
       service={service}
@@ -43,4 +39,4 @@ const OurServicesContainer: React.FC = () => {
   
 };
 
-export default OurServicesContainer;
+export default PopularServicesContainer;
