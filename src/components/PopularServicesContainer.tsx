@@ -3,6 +3,7 @@ import CONSTANTS from "../Constants";
 
 
 import ServiceCard from "./ServiceCard";
+import { Link } from "react-router-dom";
 
 const PopularServicesContainer: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const PopularServicesContainer: React.FC = () => {
       </div>
       
       
-      <div className="  flex justify-between  border-slate-900 flex-wrap">
+      <div className="  flex justify-between  border-slate-900 flex-wrap gap-6">
       {CONSTANTS.POPULAR_SERVICES.map((service)=>{
         return(
       <ServiceCard 
@@ -33,7 +34,7 @@ const PopularServicesContainer: React.FC = () => {
       
       </div>
         </div>
-      <button className="bg-blue-600 w-fit mx-auto font-semibold text-white py-3 px-3 rounded-lg ">Zobacz więcej</button>
+      <Link to="/services" className="bg-blue-600 w-fit mx-auto font-semibold text-white py-3 px-3 rounded-lg ">Zobacz więcej</Link>
           </section>
         )
   

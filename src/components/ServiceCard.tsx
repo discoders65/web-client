@@ -43,22 +43,31 @@ const ServiceCard:React.FC<IProps> = ({service,className}) => {
                 <p className='text-dark-light mt-3 text-sm md:text-lg'>
                     {service.description}
                 </p>
-                <div className='flex flex-col flex-nowrap  mt-6'>
+<div className='flex justify-between'>
 
-                    <div className='flex items-center gap-x-2 md:gap-x-2.5'>
-                    <GoClockFill className='text-gray-600'/>
-                   <span className='font-semibold text-gray-600'>{service.time}</span>
-               
-                    </div>
+<div className='flex flex-col flex-nowrap  mt-6'>
+
+<div className='flex items-center gap-x-2 md:gap-x-2.5'>
+<GoClockFill className='text-gray-600'/>
+<span className='font-semibold text-gray-600'>{service.time}</span>
+
+</div>
 <div className='flex items-center gap-x-2 md:gap-x-2.5'>
 <FaCoins className='text-gra-600'/>
 <span className='text-gray-600 font-semibold'>{service.price} zł</span>
 </div>
-        
 
 
-                </div>
+
+</div>
+
+<button className='bg-blue-500 h-fit my-auto  px-6 py-2 rounded-md text-white font-semibold hover:bg-blue-400 transition-all'>Umów</button>
+</div>
+
+                
             </div>
+
+
         </div>
     )
 }

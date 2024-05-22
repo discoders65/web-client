@@ -1,30 +1,29 @@
-
 import { MdExpandCircleDown } from "react-icons/md";
 
 const OurCommitmentList = [
   {
-    label: "UNMATCHED QUALITY",
+    label: "NIEZRÓWNANA JAKOŚĆ",
     icon: MdExpandCircleDown,
     textContent:
-      "Choose Groomit Arizona for exceptional pet grooming services. Our expert groomers are trained and updated on the latest techniques to provide the best care for your pets.",
+      "Wybierz Groomit Arizona, aby skorzystać z wyjątkowych usług groomerskich. Nasi doświadczeni groomerzy są szkoleni i na bieżąco z najnowszymi technikami, aby zapewnić najlepszą opiekę Twoim zwierzętom.",
   },
   {
-    label: "TRUST AND RELIABILITY",
+    label: "ZAUFANIE I NIEZAWODNOŚĆ",
     icon: MdExpandCircleDown,
     textContent:
-      "Trust Groomit Arizona, a reliable and professional pet grooming service. Our experienced groomers genuinely love animals and prioritize their care and safety.",
+      "Zaufaj Groomit Arizona, niezawodnej i profesjonalnej usłudze groomerskiej. Nasi doświadczeni groomerzy naprawdę kochają zwierzęta i priorytetem jest dla nich ich opieka i bezpieczeństwo.",
   },
   {
-    label: "COMPREHENSIVE SERVICES",
+    label: "KOMPLEKSOWE USŁUGI",
     icon: MdExpandCircleDown,
     textContent:
-      "Our grooming services are customized to meet your pets' unique needs. From baths and haircuts to nail trims and ear cleaning, we cater to all breeds and sizes.",
+      "Nasze usługi groomerskie są dostosowane do unikalnych potrzeb Twoich zwierząt. Od kąpieli i strzyżenia po przycinanie pazurów i czyszczenie uszu, dbamy o wszystkie rasy i rozmiary.",
   },
   {
-    label: "STRESS-FREE EXPERIENCE",
+    label: "BEZSTRESOWE DOŚWIADCZENIE",
     icon: MdExpandCircleDown,
     textContent:
-      "Ensure a stress-free grooming experience for your pets with Groomit Arizona. Our groomers create a calming atmosphere right in your home, making the process enjoyable for your furry friends.",
+      "Zapewnij swojemu zwierzakowi bezstresowe doświadczenie groomerskie z Groomit Arizona. Nasi groomerzy tworzą uspokajającą atmosferę w Twoim domu, dzięki czemu proces staje się przyjemny dla Twoich futrzanych przyjaciół.",
   },
 ];
 
