@@ -8,18 +8,16 @@ import HeroImage10 from "../assets/images/heroImage10.jpg";
 import LayerImage from "../assets/images/layer.svg";
 import LayerImage2 from "../assets/images/layer2.svg";
 import LayerImage3 from "../assets/images/layer3.svg";
-import IntroRabbitImage from "../assets/images/introRabbitImage.jpg";
 import IntroRabbitImage1 from "../assets/images/introRabbitImage1.png";
 import IntroCatImage from "../assets/images/introCatImage.jpg";
 import IntroDogImage from "../assets/images/introDogImage.jpg";
-import IntroDogImage1 from "../assets/images/introDogImage1.png";
-import IntroImage2 from "../assets/images/intro2.png";
 import DogBathImage from "../assets/images/dogBathImage.jpg";
 import DogHairdcutImage from "../assets/images/dogHaircutImage.jpg";
 import DogToothImage from "../assets/images/dogToothImage.jpg";
 import DogNailclipImage from "../assets/images/dogNailclipImage.jpg";
 
 const images = {
+
   HeroImage,
   HeroImage1,
   HeroImage2,

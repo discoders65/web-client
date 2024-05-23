@@ -1,12 +1,12 @@
 import React from "react";
 import CONSTANTS from "../Constants";
 import ServiceCard from "../components/ServiceCard";
+import images from "../Constants/imaegs";
 
 const ServicesPage: React.FC = () => {
   return <div className="flex">
   
   <div className="max-w-[1300px] mx-auto py-10">
-        
         <div className="flex flex-row justify-between mb-12  ">
         
         <h2 className="flex-1 text-3xl font-bold mb-5">Zapoznaj się z pełną ofertą naszych usług</h2>

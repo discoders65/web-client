@@ -30,13 +30,13 @@ const ServiceCard:React.FC<IProps> = ({service,className}) => {
                 <img
                     src={service.img}
                     alt="title"
-                    className='w-full object-cover object-center h-auto md:h-52 lg:h-48 xl:h-60' />
+                    className='w-full object-cover object-center h-auto md:h-52 lg:h-48 xl:h-50' />
             </Link>
 
             <div className='p-5'>
                 <Link to="service">
                     <h2
-                        className='font-roboto font-bold text-xl text-dark-soft md:text-2xl lg:text-[28px] '>
+                        className='font-roboto font-bold text-xl text-dark-soft md:text-2xl lg:text-[24px] '>
                         {service.name}
                     </h2>
                 </Link>

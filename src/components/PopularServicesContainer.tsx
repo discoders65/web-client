@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const PopularServicesContainer: React.FC = () => {
   return (
     
-      <section className={ `w-full mx-auto flex flex-col py-10  "bg-blue-100"}` }>
+      <section className={ `w-full mx-auto flex flex-col py-10 } ` }>
       
       
       
